@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style4.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+    <header>
+        <nav id="menu-links">
+        <div class="clipped-content">
+            <img src="image\bitmoji.jpg" alt="">
+        </div>
+        <a href="index.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="about.html">About Me</a>
+            <a href="hire.html">Hire Me!</a>
+
+         <!-- GitHub and LinkedIn icons -->
+    <a href="https://github.com/Pritam7847" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/pritam-anand-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://linktr.ee/PritamAnand" target="_blank" aria-label="Linktree">
+            <i class="fas fa-tree"></i> <!-- Using tree icon for Linktree -->
+        </a>
+
+        <a href="https://www.instagram.com/_himanshu._.singh_" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+    </nav>
+    </header>
+    <main>
+    <div class="container">
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+  <div class="cards">
+    <label class="card" for="item-2" id="card-1">
+      <img src="image/updatedgithub.png" alt="card">
+    </label>
+    <label class="card" for="item-3" id="card-2">
+      <img src="image/linkedin.jpg" alt="card">
+    </label>
+    <label class="card" for="item-1" id="card-3">
+      <img src="image/instagram.jpg" alt="card">
+    </label>
+  </div>
+
+  <div class="button-area">
+  <button id="btn1" class="carousel-btn active">Open Github</button>
+  <button id="btn2" class="carousel-btn">Open LinkedIn</button>
+  <button id="btn3" class="carousel-btn">Open Instagram</button>
+</div>
+
+    </main>
+     <footer class="footer">
+        <div class="footer-content">
+            <h2>Designed and Developed by</h2>
+            <h3>Pritam Anand</h3>
+            <span> A Fullstack Web Developer </span>
+            <span>Email: himanshusingh7847@gmail.com</span>
+        </div>
+
+<ul class="footer__links">
+                    <li>
+                        <a href="connect.html" class="footer__link">Linked In</a>
+                    </li>
+                    <li>
+                        <a href="connect.html" class="footer__link">Github</a>
+                    </li>
+                    <li>
+                        <a href="connect.html" class="footer__link">Contact Me</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="#"
+                        target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i></a>
+                    </a>
+
+                    <a href="#" target="_blank" class="footer__social">
+                        <i class="uil uil-github-alt"></i></a>
+                    </a>
+
+                    <a href="#" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i></a>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&copy;  Pritam Anand | All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+    <script>
+  const btns = document.querySelectorAll(".carousel-btn");
+
+  function updateButtonDisplay() {
+    if (document.getElementById("item-1").checked) {
+      showButton(0);
+    } else if (document.getElementById("item-2").checked) {
+      showButton(1);
+    } else if (document.getElementById("item-3").checked) {
+      showButton(2);
+    }
+  }
+
+  function showButton(index) {
+    btns.forEach((btn, i) => {
+      btn.classList.toggle("active", i === index);
+    });
+  }
+
+  // Listen for changes
+  document.querySelectorAll('input[name="slider"]').forEach(input => {
+    input.addEventListener("change", updateButtonDisplay);
+  });
+
+  // Initial state
+  updateButtonDisplay();
+</script>
+
+    <script src="script4.js"></script>
+</body>
+</html>
