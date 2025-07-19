@@ -29,3 +29,7 @@ document.getElementById('card7').onclick = function(){
 document.getElementById('card8').onclick = function(){
     window.location.href = 'https://github.com/Pritam7847/Attendance-Calculator'
 };
+
+document.getElementById('card9').onclick = function(){
+    window.location.href = 'https://password-game-self-ten.vercel.app/'
+};
