@@ -3,8 +3,8 @@
 Welcome to my personal portfolio website! This site showcases my technical skills, projects, and journey as a developer. 🚀
 
 ## 🌐 Live Preview
-[Click here to view the live site]()  
-*(Replace this with your actual deployment link)*
+[Click here to view the live site] (https://pritam7847.github.io/portfolio-websiteHTMLbased/)  
+
 
 ---
 
