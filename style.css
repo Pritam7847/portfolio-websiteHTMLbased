@@ -5,6 +5,19 @@ body{
   min-height: 100vh;
 }
 
+.notice{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.red-note {
+  color: red;
+  font-weight: bold;
+}
+
+
 #arc-preloader.hidden {
   display: none !important;
   pointer-events: none;
@@ -457,6 +470,16 @@ nav#menu-links a:hover::after {
     gap: 10px; /* Adds some space between the buttons (optional) */
     align-items: center;
 }
+
+.tech-logo {
+  transition: transform 0.3s ease;
+}
+
+.tech-logo:hover {
+  transform: scale(1.2);
+}
+
+
 
 .gallery{
     display: grid;
